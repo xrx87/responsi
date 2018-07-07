@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>jQuery Masked Input</title>
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#tgl").mask("99/99/9999");
+            $("#telp").mask("(999) 999-9999");
+        });
+    </script>
+</head>
+<body>
+    <form action="" method="post">
+        <p>Tanggal : <input type="text" name="tanggal" id="tgl"></p>
+        <p>Telepon : <input type="text" name="telepon" id="telp"></p>
+    </form>
+</body>
+</html>
