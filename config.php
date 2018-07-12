@@ -2,13 +2,13 @@
   $host = "localhost";
   $user = "root";
   $pass = "";
-  $db = "reno";
+  $db = "televisi";
 
   $conn = mysqli_connect($host,$user,$pass,$db);
 
   if(mysqli_connect_error()) {
-      echo "Error ".mysqli_connect_error();
+      echo "Connection Failed";
   } else {
-      echo "Success";
+      echo "Connection Successfully";
   }
 ?>
